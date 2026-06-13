@@ -1,0 +1,183 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 210 40% 98%;
+    --card: 240 10% 6%;
+    --card-foreground: 210 40% 98%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 210 40% 98%;
+    /* Primary: Vivid Crimson Red */
+    --primary: 346 84% 61%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+    /* Accent: Electric Blue */
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 5% 15%;
+    --input: 240 5% 15%;
+    --ring: 346 84% 61%;
+    --radius: 1.5rem;
+    --chart-1: 346 84% 61%;
+    --chart-2: 217 91% 60%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 263 90% 64%;
+    --chart-5: 240 5% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+/* 10% Less Whiteness (0.5 opacity) for Crystal Clear Visibility */
+.text-hero-red-3d {
+  font-family: 'Lobster', cursive;
+  color: #e31e24;
+  text-shadow: 
+    -1px -1px 0 rgba(255, 255, 255, 0.5),  
+     1px -1px 0 rgba(255, 255, 255, 0.5),
+    -1px  1px 0 rgba(255, 255, 255, 0.5),
+     1px  1px 0 rgba(255, 255, 255, 0.5),
+    3px 3px 0px #8b1216,
+    4px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.text-hero-blue-3d {
+  font-family: 'Lobster', cursive;
+  color: #2563eb;
+  text-shadow: 
+    -1px -1px 0 rgba(255, 255, 255, 0.5),  
+     1px -1px 0 rgba(255, 255, 255, 0.5),
+    -1px  1px 0 rgba(255, 255, 255, 0.5),
+     1px  1px 0 rgba(255, 255, 255, 0.5),
+    3px 3px 0px #1e40af,
+    4px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.text-simple-red {
+  color: #e31e24;
+  text-shadow: 
+    -0.8px -0.8px 0 rgba(255, 255, 255, 0.5),  
+     0.8px -0.8px 0 rgba(255, 255, 255, 0.5),
+    -0.8px  0.8px 0 rgba(255, 255, 255, 0.5),
+     0.8px  0.8px 0 rgba(255, 255, 255, 0.5);
+}
+
+.text-simple-blue {
+  color: #2563eb;
+  text-shadow: 
+    -0.8px -0.8px 0 rgba(255, 255, 255, 0.5),  
+     0.8px -0.8px 0 rgba(255, 255, 255, 0.5),
+    -0.8px  0.8px 0 rgba(255, 255, 255, 0.5),
+     0.8px  0.8px 0 rgba(255, 255, 255, 0.5);
+}
+
+.text-glow-white {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2), 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.glass-morphism {
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.8; filter: brightness(1) drop-shadow(0 0 10px hsla(var(--primary), 0.4)); }
+  50% { opacity: 1; filter: brightness(1.2) drop-shadow(0 0 25px hsla(var(--primary), 0.7)); }
+}
+
+.animate-glow {
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Amazing Floating Motion */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+/* Sequential Heartbeat (Beep) Motion */
+@keyframes beep-delhi {
+  0%, 80%, 100% { transform: scale(1); }
+  10%, 20% { transform: scale(1.08); }
+}
+
+@keyframes beep-heroes {
+  0%, 80%, 100% { transform: scale(1); }
+  35%, 45% { transform: scale(1.08); }
+}
+
+.animate-beep-delhi {
+  animation: beep-delhi 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.animate-beep-heroes {
+  animation: beep-heroes 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Bling Shimmer Effect - Final International Version */
+@keyframes bling {
+  0%, 100% { opacity: 0.9; filter: brightness(1); }
+  50% { opacity: 1; filter: brightness(1.5) drop-shadow(0 0 12px hsla(var(--accent), 0.6)); }
+}
+
+.animate-bling {
+  animation: bling 2.5s ease-in-out infinite;
+}
+
+/* Hero Button Dynamic Glow & Motion */
+@keyframes hero-button-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(227, 30, 36, 0.4), 0 0 40px rgba(37, 99, 235, 0.2); transform: scale(1) translateY(0); }
+  50% { box-shadow: 0 0 45px rgba(227, 30, 36, 0.7), 0 0 65px rgba(37, 99, 235, 0.4); transform: scale(1.08) translateY(-6px); }
+}
+
+.animate-hero-button {
+  animation: hero-button-glow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}

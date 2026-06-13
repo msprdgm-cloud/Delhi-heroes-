@@ -1,0 +1,64 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "Red Fort Sunset",
+      "imageUrl": "https://picsum.photos/seed/delhi1/800/1000",
+      "imageHint": "Red Fort Delhi"
+    },
+    {
+      "id": "hero-2",
+      "description": "Street food at Chandni Chowk",
+      "imageUrl": "https://picsum.photos/seed/delhi2/800/1000",
+      "imageHint": "Indian street food"
+    },
+    {
+      "id": "hero-3",
+      "description": "Modern Delhi skyline",
+      "imageUrl": "https://picsum.photos/seed/delhi3/800/1000",
+      "imageHint": "Modern Delhi"
+    },
+    {
+      "id": "hero-4",
+      "description": "Lotus Temple serene view",
+      "imageUrl": "https://picsum.photos/seed/delhi4/800/1000",
+      "imageHint": "Lotus Temple"
+    },
+    {
+      "id": "avatar-1",
+      "description": "User profile 1",
+      "imageUrl": "https://picsum.photos/seed/user1/200/200",
+      "imageHint": "Portrait person"
+    },
+    {
+      "id": "avatar-2",
+      "description": "User profile 2",
+      "imageUrl": "https://picsum.photos/seed/user2/200/200",
+      "imageHint": "Portrait person"
+    },
+    {
+      "id": "avatar-3",
+      "description": "User profile 3",
+      "imageUrl": "https://picsum.photos/seed/user3/200/200",
+      "imageHint": "Portrait person"
+    },
+    {
+      "id": "grid-1",
+      "description": "Street art",
+      "imageUrl": "https://picsum.photos/seed/art1/600/600",
+      "imageHint": "Street art"
+    },
+    {
+      "id": "grid-2",
+      "description": "Auto rickshaw",
+      "imageUrl": "https://picsum.photos/seed/auto1/600/600",
+      "imageHint": "Auto rickshaw"
+    },
+    {
+      "id": "grid-3",
+      "description": "Spice market",
+      "imageUrl": "https://picsum.photos/seed/spices1/600/600",
+      "imageHint": "Spice market"
+    }
+  ]
+}
